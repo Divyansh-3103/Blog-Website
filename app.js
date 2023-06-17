@@ -23,7 +23,7 @@ const postSchema={
 }
 const Post=mongoose.model("post",postSchema);
 
-app.post("./",function(req,res){
+app.post("/",function(req,res){
   const newPost=new Post({
     Title:req.body.Title,
     Content:req.body.Post
